@@ -18,4 +18,11 @@ jobs:
         # remote_path: /rayaay.ronins.site
         remote_path: test
         
+  test-log:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show pwd
+        run: |
+          pwd
+
             
