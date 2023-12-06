@@ -21,8 +21,8 @@ jobs:
   test-log:
     runs-on: ubuntu-latest
     steps:
-      - name: show pwd
+      - name: show files and folders in pwd
         run: |
-          pwd
+          ls 
 
             
