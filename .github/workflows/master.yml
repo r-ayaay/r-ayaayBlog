@@ -14,8 +14,8 @@ jobs:
               server: ronins.site
               username: rayaay
               ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-              local_path: ./_posts
-              remote_path: test
+              local_path: ./_site
+              remote_path: rayaay.ronins.site
          
   
               
