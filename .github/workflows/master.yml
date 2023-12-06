@@ -1,5 +1,9 @@
 on:
-  [push]
+  push:
+    branches:
+      - main
+    tags:
+      - deploy
        
 jobs:
   deploy_job:
@@ -11,11 +15,11 @@ jobs:
         - name: deploy file
           uses: wlixcc/SFTP-Deploy-Action@v1.2.4
           with:
-              server: ronins.site
-              username: rayaay
+              server: ${{ secrets.SERVER }}
+              username: ${{ secrets.SSH_USERNAME }}
               ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-              local_path: ./_site
-              remote_path: rayaay.ronins.site
+              local_path: ${{ secrets.LOCAL_PATH }}
+              remote_path: ${{ secrets.REMOTE_PATH}}
          
   
               
