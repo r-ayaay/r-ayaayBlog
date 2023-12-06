@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Raya-ay | A minimal and beautiful Jekyll theme best for writing and note-taking.</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Raya-ay" />
+<meta name="author" content="Raymond Aya-ay" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="A minimal and beautiful Jekyll theme best for writing and note-taking." />
+<meta property="og:description" content="A minimal and beautiful Jekyll theme best for writing and note-taking." />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="Raya-ay" />
+<meta property="og:type" content="website" />
+<link rel="next" href="http://localhost:4000/page2" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Raya-ay" />
+<meta name="twitter:site" content="@ngzhio" />
+<meta name="twitter:creator" content="@Raymond Aya-ay" />
+<meta name="google-site-verification" content="u4WXQl0Eu66rsQo2kRdCNx" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"Raymond Aya-ay"},"description":"A minimal and beautiful Jekyll theme best for writing and note-taking.","headline":"Raya-ay","name":"Raymond Aya-ay","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/avatar.jpg"},"name":"Raymond Aya-ay"},"sameAs":["https://github.com/raya-ay"],"url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Raya-ay" />
+
+
+
+
+
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open%20Sans|Roboto|Roboto%20Slab|Inconsolata|Dancing%20Script|Noto%20Sans%20SC|Noto%20Sans%20TC|Noto%20Serif%20SC|Noto%20Serif%20TC|Ma%20Shan%20Zheng">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/skin.css">
+
+<!-- Begin selecting skin -->
+
+  <script>
+    const hour = (new Date()).getHours();
+    let filename = "";
+    if (hour >= 5 && hour < 7) {
+      filename = "/assets/css/skin-sunrise.css";
+    } else if (hour >= 7 && hour < 17) {
+      filename = "/assets/css/skin-daylight.css";
+    } else if (hour >= 17 && hour < 19) {
+      filename = "/assets/css/skin-sunset.css";
+    } else {
+      filename = "/assets/css/skin-midnight.css";
+    }
+    const elem = document.createElement("link");
+    elem.setAttribute("rel", "stylesheet");
+    elem.setAttribute("type", "text/css");
+    elem.setAttribute("href", filename);
+    document.getElementsByTagName("head")[0].appendChild(elem);
+  </script>
+
+<!-- End selecting skin -->
+
+<script async src="https://use.fontawesome.com/releases/v5.0.12/js/all.js"></script>
+
+
+
+
+  </head>
+
+  <body>
+    <div class="site-container">
+      <header class="site-header">
+        <div class="wrapper">
+  <script>
+    function clickSidebarButton() {
+      const elem = document.getElementById("site-sidebar")
+      if (elem.style.display == "none" || elem.style.display == "") {
+        elem.style.display = "block";
+      } else {
+        elem.style.display = "none";
+      }
+    }
+  </script>
+  <a class="site-sidebar-button" onclick="clickSidebarButton()"><i class="far fa-user"></i>
+  </a>
+
+  <a class="site-title" rel="author" href="/">Raya-ay</a>
+
+  
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger" title="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <ul class="trigger">
+              <li><a class="" href="/about/">About</a></li>
+            
+              <li><a class="" href="/categories/">Categories</a></li>
+            
+              <li><a class="" href="/tags/">Tags</a></li>
+            </ul>
+    </nav>
+  
+</div>
+
+      </header>
+      
+      <div class="site-body wrapper">
+        <aside class="site-sidebar" id="site-sidebar">
+          
+            <div class="sidebar-section"><img src="/avatar.jpg" class="author-avatar u-photo align-center" alt="Raymond Aya-ay">
+  </div>
+
+<div class="sidebar-section">
+  <ul class="contact-list">
+    <li>
+        <i class="sidebar-icon fas fa-at"></i>
+        <span class="contact-info p-name">Raymond Aya-ay</span>
+      </li>
+    <li>
+        <i class="sidebar-icon fas fa-envelope"></i>
+        <a class="contact-info u-email" href="mailto:raymond.p.ayaay@gmail.com">raymond.p.ayaay@gmail.com</a>
+      </li>
+    
+  </ul>
+</div>
+
+<!-- <div class="sidebar-section feed-subscribe">
+  <a href="/feed.xml">
+    <i class="sidebar-icon fas fa-rss"></i><span>Subscribe</span>
+  </a>
+</div> -->
+
+<div class="sidebar-section">
+    <ul class="social-icons">
+      <li>
+          <a class="social-icon" href="https://github.com/raya-ay"><i class="fab fa-github fa-2x" title="GitHub"></i></a>
+        </li>
+    </ul>
+  </div>
+
+          
+        </aside>
+        <main class="site-main" id="site-main" aria-label="Content" tabindex="1">
+          <div class="home">
+
+  
+
+  <ul class="post-list"><!--  -->
+      <li>
+        <h2>
+          <a href="/internship/2023/11/24/My-15th-Week-Exp.html">
+            Tales of the 15th Week Intern
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-11-24T00:00:00+08:00" itemprop="datePublished">
+            Nov 24, 2023
+          </time></p><div class="post-excerpt">This whole week was dedicated to finishing my Jekyll project
+
+</div></li><!--  -->
+      <li>
+        <h2>
+          <a href="/internship/2023/11/17/static-vs-dynamic-anthony.html">
+            Static vs Dynamic Sites
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-11-17T00:00:00+08:00" itemprop="datePublished">
+            Nov 17, 2023
+          </time></p><div class="post-excerpt">In this article, we will find out what is meant by “dynamic” and “static” websites. What they are, what are their differences and benefits and lastly,
+
+</div></li><!--  -->
+      <li>
+        <h2>
+          <a href="/internship/2023/11/17/My-14th-Week-Exp.html">
+            Tales of the 14th Week Intern
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-11-17T00:00:00+08:00" itemprop="datePublished">
+            Nov 17, 2023
+          </time></p><div class="post-excerpt">This week, I spent the majority of time with Jekyll, which is a static site generator, that turns plain text into static websites and blogs. It is mainly used for making blogs due to its “blog-aware” nature and its ability to read markdowns.
+
+</div></li><!--  -->
+      <li>
+        <h2>
+          <a href="/internship/2023/11/10/My-13th-Week-Exp.html">
+            Tales of the 13th Week Intern
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-11-10T00:00:00+08:00" itemprop="datePublished">
+            Nov 10, 2023
+          </time></p><div class="post-excerpt">You may notice the gap between this reflection and the previous and and it was due to the “weeklong” weekend I had due to all saint’s day and all soul’s day. This week was spent familiarizing myself with Ruby and studying the nature of a decentralized git workflow
+
+</div></li><!-- assets/images/anthony/11th-week.png -->
+      <li>
+        <h2>
+          <a href="/internship/2023/10/27/My-11th-Week-Exp.html">
+            Tales of the 11th Week Intern
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-10-27T00:00:00+08:00" itemprop="datePublished">
+            Oct 27, 2023
+          </time></p><div class="post-excerpt">This week was spent continuing my exploration of testing code for continuous integration with CodiumAI, PHPStan, and PHPUnit. As well as my thoughts on filling up my first check-in log which details my experience so far in the past 2 months. Lastly, I had to add images for all my past reflections and the one you are currently reading with an image generated by AI.
+
+</div></li><!-- assets/images/anthony/10th-week.png -->
+      <li>
+        <h2>
+          <a href="/2023/10/20/My-10th-Week-Exp.html">
+            Tales of the 10th Week Intern
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-10-20T00:00:00+08:00" itemprop="datePublished">
+            Oct 20, 2023
+          </time></p><div class="post-excerpt">This week, it was a continuation of our task the previous week which was to further study and read on Github actions and workflows. We were also introduced to testing our code, which is part of the CICD process in which we use Codium AI, a code integrity AI agent, that analyzes one’s code and generates tests to detect bugs before deployment. Throughout the week there was some downtime between our tasks so I also spent my time improving my skills as a web designer with HTML and CSS.
+
+</div></li><!-- assets/images/anthony/9th-week.png -->
+      <li>
+        <h2>
+          <a href="/internship/2023/10/13/My-9th-Week-Exp.html">
+            Tales of the 9th Week Intern
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-10-13T00:00:00+08:00" itemprop="datePublished">
+            Oct 13, 2023
+          </time></p><div class="post-excerpt">Our tasks using cron jobs gave us an introduction to automating our tasks so that the server could run commands on an assigned schedule. This served as our introduction to our next topic this week, which my fellow interns and I had to face, Github actions and workflow. Afterward, we revisited a beginner topic, the HTML DOM, but with the accumulated knowledge we have, I am sure we can pick up the topic faster and gain a broader understanding of it.
+
+</div></li><!-- assets/images/anthony/8th-week.png -->
+      <li>
+        <h2>
+          <a href="/internship/2023/10/06/My-8th-Week-Exp.html">
+            Tales of the 8th Week Intern
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-10-06T00:00:00+08:00" itemprop="datePublished">
+            Oct 6, 2023
+          </time></p><div class="post-excerpt">Cron Jobs! They are a way of scheduling tasks to run on your server. Cron is a service running in the background that will execute commands (jobs) at a specified time, or a regular interval. This week was loaded with Cron job-related tasks and I am glad I got introduced to this method.
+
+</div></li><!-- assets/images/anthony/7th-week.png -->
+      <li>
+        <h2>
+          <a href="/internship/2023/09/29/My-7th-Week-Exp.html">
+            Tales of the 7th Week Intern
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-09-29T00:00:00+08:00" itemprop="datePublished">
+            Sep 29, 2023
+          </time></p><div class="post-excerpt">This week we worked on our websites to hone our skills in livewire and other tools. For my project, I decided to make a website that shows my love for a topic I have loved ever since I was a kid, Pokemon.
+
+</div></li><!-- assets/images/anthony/6th-week.png -->
+      <li>
+        <h2>
+          <a href="/internship/2023/09/18/A-Monthly-Retrospective.html">
+            A Monthly Retrospective
+          </a>
+        </h2>
+        <p class="post-meta">
+          <time class="dt-published" datetime="2023-09-18T00:00:00+08:00" itemprop="datePublished">
+            Sep 18, 2023
+          </time></p><div class="post-excerpt">Looking back, it is getting close to two months since I started my internship here. It has been a very fruitfly experience so far although I may be biased since this is the path that I took, but I don’t think I would be able to do this much if I applied to any other company. I have gotten a lot of insight into what it means to be working in this globalized industry. Here’s a summary of what my experiences are so far.
+
+</div></li></ul>
+
+    
+      <div class="pager">
+        <ul class="pagination">
+          <li><div class="pager-edge">•</div></li>
+          <li><div class="current-page">1</div></li>
+          <li><a href="/page2" class="next-page">2</a></li>
+        </ul>
+      </div></div>
+
+          <footer class="site-footer">
+            <div class="footer-col-wrapper">
+
+  <div class="footer-col">
+    <div class="copyright">
+      
+      
+      
+      
+      <p>Copyright © 2016&nbsp;-&nbsp;2023 Raymond Aya-ay; All rights reserved.</p>
+      
+    </div>
+    <p>
+      Powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://github.com/ngzhio/jekyll-theme-hamilton">Hamilton</a>
+    </p>
+  </div>
+
+  <div class="footer-col">
+    <p>A minimal and beautiful Jekyll theme best for writing and note-taking.</p>
+  </div>
+</div>
+
+          </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+
+</html>

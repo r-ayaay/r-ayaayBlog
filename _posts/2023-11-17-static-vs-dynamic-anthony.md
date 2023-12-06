@@ -41,7 +41,7 @@ Here is a list of popular Static Site Generators available:
 
 #### Static websites tend to be more secure.
 
-	this is due to static websites not requiring to have any databases to store and retrieve information. This makes it so that there is no vital/sensitive data that may be stolen as what would only be hosted on the site is information that was willingly placed there.
+This is due to static websites not requiring to have any databases to store and retrieve information. This makes it so that there is no vital/sensitive data that may be stolen as what would only be hosted on the site is information that was willingly placed there.
 
 
 ## Dynamic websites
