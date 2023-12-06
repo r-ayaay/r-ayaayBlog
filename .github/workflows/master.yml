@@ -2,21 +2,29 @@ on:
   push:
     branches:
       - main
+
+            
 name: SFTP Deploy
 jobs:
-  sftp:
-    name: sftp
+  actioncheckout:
     runs-on: ubuntu-latest
     steps:
-    - name: does the thing
-      uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-      with:
-        server: ronins.site
-        username: rayaay
-        ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-        local_path: _site
+      - name: Checkout
+        uses: actions/checkout@v4.1.1
+        
+  # sftp:
+  #   name: sftp
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - name: does the thing
+  #     uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+  #     with:
+  #       server: ronins.site
+  #       username: rayaay
+  #       ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+  #       local_path: _site
         # remote_path: /rayaay.ronins.site
-        remote_path: test
+  #       remote_path: test
         
   test-log:
     runs-on: ubuntu-latest
