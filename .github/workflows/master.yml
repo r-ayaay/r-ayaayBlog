@@ -16,10 +16,13 @@ jobs:
         uses: burnett01/rsync-deployments@6.0.0
         with:
           switches: -avzr --delete
-          path: ${{ secrets.LOCAL_PATH }}
-          remote_path: ${{ secrets.REMOTE_PATH}}
-          remote_host: ${{ secrets.SERVER }}
-          remote_user: ${{ secrets.SSH_USERNAME }}
+          path: _site
+          # remote_path: ${{ secrets.REMOTE_PATH}}
+          # remote_host: ${{ secrets.SERVER }}
+          # remote_user: ${{ secrets.SSH_USERNAME }}
+          # remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          remote_path: ~/rayaay.ronins.site/public/blog
+          remote_host: ronins.site
+          remote_user: rayaay
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
-          remote_key_pass: ""
               
