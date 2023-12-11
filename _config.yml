@@ -3,6 +3,7 @@ description: A minimal and beautiful Jekyll theme best for writing and note-taki
 author: Raymond Aya-ay
 avatar: /avatar.jpg
 email: raymond.p.ayaay@gmail.com
+baseurl: /public/blog/_site/
 
 plugins:
   - jekyll-seo-tag
