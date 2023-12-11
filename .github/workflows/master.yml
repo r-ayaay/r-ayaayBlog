@@ -21,4 +21,5 @@ jobs:
           remote_host: ${{ secrets.SERVER }}
           remote_user: ${{ secrets.SSH_USERNAME }}
           remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          remote_key_pass: ""
               
