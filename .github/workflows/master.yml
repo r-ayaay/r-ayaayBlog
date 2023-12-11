@@ -10,18 +10,15 @@ on:
 jobs:
   deploy_job:
     runs-on: ubuntu-latest
-    name: deploy
     steps:
-        - name: Checkout
-          uses: actions/checkout@v3
-        - name: deploy file
-          uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-          with:
-              server: ${{ secrets.SERVER }}
-              username: ${{ secrets.SSH_USERNAME }}
-              ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
-              local_path: ${{ secrets.LOCAL_PATH }}
-              remote_path: ${{ secrets.REMOTE_PATH}}
-         
-  
+      - uses: actions/checkout@v3
+      - name: rsync deployments
+        uses: burnett01/rsync-deployments@6.0.0
+        with:
+          switches: -avzr --delete
+          remote_host: ${{ secrets.SERVER }}
+          remote_user: ${{ secrets.SSH_USERNAME }}
+          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          path: ${{ secrets.LOCAL_PATH }}
+          remote_path: ${{ secrets.REMOTE_PATH}}
               
